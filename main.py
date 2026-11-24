@@ -26,10 +26,17 @@ Why this line (judged against the bounty brief in RULES.txt):
 
 from pathlib import Path
 
-ENTRY = (
-    "Out of office. Dave watered me twice since March, "
-    "both times coffee. If I die, bury me in the good pot."
-)
+# The line is built from three named beats — setup, twist, reveal —
+# so the joke's structure is visible in the code, not just in the
+# module docstring. Setup: Dave's neglect. Twist: the water was
+# coffee. Reveal (last clause): the plant's dark dying wish.
+# The beats join to exactly the chosen 103-character line.
+SETUP = "Out of office. Dave watered me twice since March, "
+TWIST = "both times coffee. "
+REVEAL = "If I die, bury me in the good pot."
+
+ENTRY = SETUP + TWIST + REVEAL
+assert len(ENTRY) == 103, f"beats must join to the 103-char line, got {len(ENTRY)}"
 
 MAX_CHARS = 120
 OUTPUT_PATH = Path("/output/entry.txt")
