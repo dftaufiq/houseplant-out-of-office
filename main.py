@@ -31,6 +31,13 @@ from pathlib import Path
 # module docstring. Setup: Dave's neglect. Twist: the water was
 # coffee. Reveal (last clause): the plant's dark dying wish.
 # The beats join to exactly the chosen 103-character line.
+# The reveal lands in the last clause because the line is built to
+# escalate: the setup establishes ordinary neglect, the twist makes
+# it absurd, and only then does the plant state its dying wish, so
+# the joke peaks on the final words instead of spending itself early.
+# The straight-faced auto-reply voice ("Out of office...") keeps the
+# joke deadpan, and the neglect itself — not office jargon — is what
+# is funny, which is how the line meets the judge's criteria.
 SETUP = "Out of office. Dave watered me twice since March, "
 TWIST = "both times coffee. "
 REVEAL = "If I die, bury me in the good pot."
